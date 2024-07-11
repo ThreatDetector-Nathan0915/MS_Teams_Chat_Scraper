@@ -1,0 +1,13 @@
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+brew install python
+
+pip3 install requests apscheduler
+
+chmod +x teams_to_sharepoint.py
+
+crontab -e
+
+@reboot /usr/local/bin/python3 /path/to/teams_to_sharepoint.py
+ OR
+0 10 * * 1,3,5 /usr/local/bin/python3 /path/to/teams_to_sharepoint.py
