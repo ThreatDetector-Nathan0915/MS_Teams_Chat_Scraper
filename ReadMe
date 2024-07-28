@@ -1,3 +1,22 @@
+# Teams Chat Scraper and SharePoint Uploader
+
+This repository contains a Python script that scrapes chat history from a Microsoft Teams channel and uploads it to a specified SharePoint folder. The script uses the Microsoft Graph API for authentication, data retrieval, and file upload. The script is scheduled to run on specified days and times using APScheduler.
+
+## Prerequisites
+
+- Python 3.x
+- Access to Microsoft Azure and permissions to create an app registration
+- Required Python packages: `requests`, `apscheduler`
+
+## Setup
+
+### Step 1: Install Required Packages
+
+Run the following command to install the required Python packages:
+
+```sh
+pip install requests apscheduler
+
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 brew install python
